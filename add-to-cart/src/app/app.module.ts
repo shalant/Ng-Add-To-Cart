@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
 import { CardComponent } from './component/card/card.component';
 import { ProductsComponent } from './component/products/products.component';
-import { ApiComponent } from './service/api/api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,12 @@ import { ApiComponent } from './service/api/api.component';
     HeaderComponent,
     CardComponent,
     ProductsComponent,
-    ApiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
