@@ -4,16 +4,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './component/header/header.component';
-import { CardComponent } from './component/card/card.component';
 import { ProductsComponent } from './component/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CartComponent } from './component/cart/cart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    CardComponent,
+    CartComponent,
     ProductsComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
